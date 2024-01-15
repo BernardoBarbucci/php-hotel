@@ -61,7 +61,15 @@ $hotels = [
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            /* background: linear-gradient(90deg, #000, #790000fa); */
+            background: linear-gradient(90deg, #000, #790000fa);
+        }
+
+        h1 {
+            color: white;
+        }
+
+        p {
+            color: white;
         }
     </style>
 
@@ -76,11 +84,12 @@ $hotels = [
                         <!-- foreach per gli hotel -->
                         <?php foreach ($hotels as $hotel) : ?>
                             <div class="col-lg-3 col-md-4 col-sm-6">
-
                                 <div class="card">
                                     <h1> <?php echo $hotel['name']; ?> </h1>
+                                    <p> <?php echo $hotel['description']; ?> </p>
+                                    <p> <?php echo $hotel['vote']; ?> </p>
+                                    <p> <?php echo $hotel['distance_to_center']; ?> </p>
                                 </div>
-
                             </div>
                         <?php endforeach; ?>
                     </div>
