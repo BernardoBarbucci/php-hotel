@@ -44,8 +44,12 @@ $hotels = [
         'vote' => 10,
         'distance_to_center' => 0
     ],
-
 ];
+
+// form per filtrare gli hotels in base al parcheggio 
+    // valore predefinito per mostrare tutte le cards di default
+$parkingFilter = isset($_GET['parking']) ? $_GET['parking'] : null;
+
 
 ?>
 
