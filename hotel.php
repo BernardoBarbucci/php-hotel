@@ -69,6 +69,10 @@ $hotels = [
         background: linear-gradient(180deg, #311f13, #a87e62);
     }
 
+    #custom_nav {
+        width: 95%;
+    }
+
     .card {
         background-color: #f4decb;
         min-height: 15rem;
@@ -99,7 +103,13 @@ $hotels = [
 <body>
     <main class="d-flex align-items-center">
         <section class="container d-flex flex-column align-items-center">
-            <h1 class="mb-5">PHP Hotels</h1>
+            <div id="custom_nav" class="d-flex flex-row justify-content-between">
+                <h1 class="mb-5">PHP Hotels</h1>
+                <form action="./hotel.php" method="get">
+                    <input type="hidden" name="parking" id="parking">
+                    <button type="submit">mostrami gli hotel con un parcheggio</button>
+                </form>
+            </div>
             <div class="row d-flex justify-content-center">
                 <div class="card col-11 border">
                     <div class="row pt-3">
